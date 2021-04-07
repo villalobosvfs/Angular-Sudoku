@@ -1,0 +1,8 @@
+
+<div>
+    <button [id]="square.id"
+            [ngClass]="getClass()"
+            (click)="onClick()"
+            (keydown)="onKeyPress($event)"
+            [disabled]="square.disable">{{ square.display }}</button>
+</div>

@@ -1,0 +1,21 @@
+button {
+    /* padding: 15px 32px; */
+    padding: 14px 26px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: x-large;
+}
+
+@media only screen and (max-width: 600px) {
+    button {
+        width: 50px!important;
+        min-width: unset!important;
+        padding: 5px 0px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: x-large;
+        margin: 1px;
+    }
+}

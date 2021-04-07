@@ -1,0 +1,5 @@
+<div class="container">
+    <!-- <input type="file" (change)="onFileSelect($event)" #file style="display: none" multiple/> -->
+    <input type="file" accept="text" (change)="onFileSelect($event)" #file style="display: none" />
+    <button mat-stroked-button (click)="addFiles()">Upload Game</button>
+</div>

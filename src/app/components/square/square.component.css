@@ -1,0 +1,67 @@
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(180, 180, 180);
+    margin: 0;
+}
+
+button {
+    display: block;
+    font-size: x-large;
+    background-color: white;
+    margin: 0;
+    width: 50px;
+    height: 50px;
+    border: 0;
+    box-shadow: 0;
+    border-radius: 0;
+    font-weight: normal;
+}
+
+@media only screen and (max-width: 600px) {
+    button {
+        display: block;
+        font-size: x-large;
+        background-color: white;
+        margin: 0;
+        width: 50px;
+        height: 50px;
+        border: 0;
+        box-shadow: 0;
+        border-radius: 0;
+        font-weight: normal;
+    }
+}
+
+.error {
+    color:  red;
+}
+
+.section {
+    background-color: lightblue;
+}
+
+.selected {
+    background-color: grey;
+}
+
+.notes {
+    font-size: small;
+}
+
+.userentry {
+    color: blue;
+}
+
+.highlight {
+    background-color: lightgray;
+}
+
+.highlightNotes {
+    background-color: lightyellow;
+}
+
+.number {
+    color: blue;
+}

@@ -1,0 +1,9 @@
+
+<div class="container">
+    <app-square 
+        *ngFor="let n of board.squares; let i = index" 
+        (output)="onClick($event)"
+        (key)="onKeyPress($event)"
+        [square]="n" 
+        [index]="i"></app-square>
+</div>

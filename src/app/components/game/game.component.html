@@ -1,0 +1,37 @@
+<div class="container">
+    <div class="title">
+        <h1>Sudoku</h1>
+    </div>
+    <div class="board">
+        <app-board
+            (square)="onSelected($event)"
+            (key)="onKey($event)"
+            [board]="board"></app-board>
+    </div>
+    <div class="level">
+        <app-level (output)="onLevelChange($event)" [level]="board.level"></app-level>
+    </div>
+    <div class="btnNew">
+        <button mat-raised-button (click)="onNewGameClick()">New Game</button>
+    </div>
+    <div class="pad">
+        <app-btn-pad (num)="onPadClick($event)" [buttons]="buttonPad"></app-btn-pad>
+    </div>
+    <div class="btns">
+        <div *ngIf="!board.notes">
+            <button mat-stroked-button (click)="onNotesClick()">Notes</button>
+        </div>
+        <div *ngIf="board.notes">
+            <button mat-stroked-button (click)="onNotesClick()" color="warn">Notes</button>
+        </div>
+        <div>
+            <button mat-stroked-button (click)="onEraseClick()">Erase</button>
+        </div>
+        <div>
+            <button mat-stroked-button (click)="onUndoClick()">Undo</button>
+        </div>
+        <div class="upload">
+            <app-upload (game)="onGameSelect($event)"></app-upload>
+        </div>
+    </div>
+</div>
